@@ -1,21 +1,3 @@
-<a href="https://apps.apple.com/app/id1452689527" target="_blank">
-<img src="https://user-images.githubusercontent.com/26833433/99805965-8f2ca800-2b3d-11eb-8fad-13a96b222a23.jpg" width="1000"></a>
-&nbsp
-
-![CI CPU testing](https://github.com/ultralytics/yolov3/workflows/CI%20CPU%20testing/badge.svg)
-
-BRANCH NOTICE: The [ultralytics/yolov3](https://github.com/ultralytics/yolov3) repository is now divided into two branches:
-* [Master branch](https://github.com/ultralytics/yolov3/tree/master): Forward-compatible with all [YOLOv5](https://github.com/ultralytics/yolov5) models and methods (**recommended**).
-```bash
-$ git clone https://github.com/ultralytics/yolov3  # master branch (default)
-```
-* [Archive branch](https://github.com/ultralytics/yolov3/tree/archive): Backwards-compatible with original [darknet](https://pjreddie.com/darknet/) *.cfg models (⚠️ no longer maintained). 
-```bash
-$ git clone -b archive https://github.com/ultralytics/yolov3  # archive branch
-```
-
-<img src="https://user-images.githubusercontent.com/26833433/100382066-c8bc5200-301a-11eb-907b-799a0301595e.png" width="1000">** GPU Speed measures end-to-end time per image averaged over 5000 COCO val2017 images using a V100 GPU with batch size 32, and includes image preprocessing, PyTorch FP16 inference, postprocessing and NMS. EfficientDet data from [google/automl](https://github.com/google/automl) at batch size 8.
-
 
 ## Pretrained Checkpoints
 
@@ -89,12 +71,10 @@ Downloading https://github.com/ultralytics/yolov3/releases/download/v1.0/yolov3.
 
 Fusing layers... 
 Model Summary: 261 layers, 61922845 parameters, 0 gradients
-image 1/2 /content/yolov3/data/images/bus.jpg: 640x480 4 persons, 1 buss, Done. (0.014s)
-image 2/2 /content/yolov3/data/images/zidane.jpg: 384x640 2 persons, 3 ties, Done. (0.014s)
+
 Results saved to runs/detect/exp
 Done. (0.133s)
 ```
-<img src="https://user-images.githubusercontent.com/26833433/100375993-06b37900-300f-11eb-8d2d-5fc7b22fbfbd.jpg" width="500">  
 
 ### PyTorch Hub
 
@@ -127,11 +107,16 @@ $ python train.py --data coco.yaml --cfg yolov3.yaml --weights '' --batch-size 2
 <img src="https://user-images.githubusercontent.com/26833433/100378028-af170c80-3012-11eb-8521-f0d2a8d021bc.png" width="900">
 
 
-## Citation
-
-[![DOI](https://zenodo.org/badge/146165888.svg)](https://zenodo.org/badge/latestdoi/146165888)
 
 
 # Custom Project
 
-<img src="demo.gif">
+The Yolov3 algorithm was used to detect the vehicles in this project.
+
+<img src="demo.gif" width="900">
+
+# Cards Dataset
+The yolov3 was used to train the custom dataset of playing cards available at https://www.kaggle.com/hugopaigneau/playing-cards-dataset. A `.yaml` file was created for the cards dataset and he data was trained for 150 epochs with a learning rate of 1e-5 to get the optimal results.
+
+<img src="predicitions.png" width="900">
+
