@@ -118,5 +118,5 @@ The Yolov3 algorithm was used to detect the vehicles in this project.
 # Cards Dataset
 The yolov3 was used to train the custom dataset of playing cards available at https://www.kaggle.com/hugopaigneau/playing-cards-dataset. A `.yaml` file was created for the cards dataset and he data was trained for 150 epochs with a learning rate of 1e-5 to get the optimal results.
 
-<img src="predicitions.png" width="900">
+<img src="predicitions.png">
 
