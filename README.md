@@ -134,4 +134,4 @@ $ python train.py --data coco.yaml --cfg yolov3.yaml --weights '' --batch-size 2
 
 # Custom Project
 
-<img src="new.mp4">
+<img src="demo.gif">
